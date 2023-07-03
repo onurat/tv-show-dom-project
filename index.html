@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Show Project |Onur Atas (onurat)</title>
+    <title>TV Show Project | Onur Atas (onurat)</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
-    <div id="root">
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search episodes..." />
+      <button id="search-button">Search</button>
+      <p id="search-count"></p>
     </div>
+
+    <div id="root"></div>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
 
-    <!-- Loads YOUR javascript code -->
+    <!-- Loads YOUR JavaScript code -->
     <script src="script.js"></script>
   </body>
 </html>

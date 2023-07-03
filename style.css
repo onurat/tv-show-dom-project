@@ -1,3 +1,55 @@
 #root {
-  color: red;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.episode {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.episode h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.episode p.code {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.episode img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.episode p.summary {
+  margin-bottom: 10px;
+}
+
+.episode a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.episode a:hover {
+  color: darkblue;
+}
+
+.search-container {
+  margin-top: 20px;
+}
+
+#search-input {
+  width: 300px;
+  padding: 5px;
+}
+
+#search-count {
+  margin-top: 10px;
+  font-size: 14px;
 }
